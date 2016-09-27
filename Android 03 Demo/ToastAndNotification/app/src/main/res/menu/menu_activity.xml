@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_toastMenu"
+        android:orderInCategory="100"
+        android:icon="@drawable/toast"
+        android:title="@string/toast"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_notificationMenu"
+        android:icon="@drawable/note"
+        android:orderInCategory="101"
+        android:title="@string/notification"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_dialogMenu"
+        android:icon="@drawable/bug"
+        android:orderInCategory="102"
+        android:title="@string/dialog"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_explanationMenu"
+        android:title="@string/explanation"
+        android:orderInCategory="103"
+        />
+
+
+</menu>

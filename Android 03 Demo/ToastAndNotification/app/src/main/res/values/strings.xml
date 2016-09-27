@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Toast</string>
+    <string name="startScreenInformation">To know how to get started click on menu to get a hint!</string>
+    <string name="toast">Do this!</string>
+    <string name="notification">Or do this!</string>
+    <string name="dialog">This one is fine, too!</string>
+    <string name="buttonText">Check the result</string>
+    <string name="explanationText">Type your number above!</string>
+    <string name="explanation">Get the idea!</string>
+</resources>
