@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LayoutChanges2</string>
+    <string name="hello_world">What is up? This is some text by default!</string>
+</resources>
