@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SGKY Golf Courses</string>
+    <string name="mapLinkText"><u>Näytä kartalla</u></string>
+    <string name="action_settings">Settings</string>
+</resources>
