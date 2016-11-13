@@ -7,7 +7,7 @@ import android.graphics.Rect;
 import java.util.Random;
 
 
-public class Friend {
+public class Meteor {
 
     private Bitmap bitmap;
     private int x;
@@ -21,7 +21,7 @@ public class Friend {
     //creating a rect object for a friendly ship
     private Rect detectCollision;
 
-    public Friend(Context context, int screenX, int screenY) {
+    public Meteor(Context context, int screenX, int screenY) {
         bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.friend);
         maxX = screenX;
         maxY = screenY;

@@ -23,8 +23,8 @@ public class GameView extends SurfaceView implements Runnable {
     private SurfaceHolder surfaceHolder;
     private Enemy enemies;
 
-    //created a reference of the class Friend
-    private Friend friend;
+    //created a reference of the class Meteor
+    private Meteor friend;
     private ArrayList<Star> stars = new
             ArrayList<Star>();
 
@@ -74,8 +74,8 @@ public class GameView extends SurfaceView implements Runnable {
         //initializing boom object
         boom = new Boom(context);
 
-        //initializing the Friend class object
-        friend = new Friend(context, screenX, screenY);
+        //initializing the Meteor class object
+        friend = new Meteor(context, screenX, screenY);
         this.screenX = screenX;
         countMisses = 0;
         isGameOver = false;
@@ -124,13 +124,16 @@ public class GameView extends SurfaceView implements Runnable {
         }
 
         enemies.update(player.getSpeed());
+
         //if collision occurs with player
         if (Rect.intersects(player.getDetectCollision(), enemies.getDetectCollision())) {
 
             //displaying boom at that location
             boom.setX(enemies.getX());
             boom.setY(enemies.getY());
+            //despawning enemy
             enemies.setX(-200);
+            //increasing score for each enemy hit
             score=score+100;
 
         }
